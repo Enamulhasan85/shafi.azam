@@ -1,0 +1,385 @@
+body{
+  margin: 0;
+  position: relative;
+}
+/* navbar */
+
+/* home */
+.bg-image{
+  background-image: url("../images/coding_in_the_laptop.jpeg");
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rowheader{
+  position: absolute;
+  top: 186px;
+  font-size: 22pt;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+.headername1{
+  font-size: 2.8rem;
+  display: inline-flex;
+}
+.developer{
+  color: crimson;
+}
+.headername2{
+  font-size: 2.3rem;
+}
+
+
+/* myself */
+.main-section{
+  margin: 18px;
+}
+.section-header{
+  padding: 12px;
+}
+.section-name{
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  color: black;
+  text-shadow:0px 0 4px black;
+}
+.textwhat, .name_of_work {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 4px;
+  text-shadow: 0px 0 4px black;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.flex-columns{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-myself, .educational-background, .workfield {
+  width: 100%;
+  text-align: justify;
+  border: .5px solid #eae4e4;
+  border-radius: 0.25rem;
+}
+.text-myself{
+  padding: 22px;
+  margin-bottom: 26px;
+}
+.educational-background{
+  padding: 6px;
+  margin-bottom: 26px;
+}
+.educational-background:last-child{
+  margin-bottom: 0;
+}
+.avatar{
+  width: 45%;
+  height: 90px;
+}
+.avatar img{
+  height: 100%;
+  padding: 8px;
+}
+.text-header{
+  text-align: left;
+  width: 55%;
+  height: 100%;
+  text-shadow: 0px 0 4px black;
+}
+.who{
+  font-size: 1.5rem;
+  font-family: 'Lobster', cursive;
+}
+.text-header p{
+  font-size: 17px;
+  margin: 0;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+.qualificationname{
+  float: left;
+  font-size: 21px;
+}
+.year{
+  float: right;
+  color: #d01010;
+  font-size: 21px;
+}
+.result{
+  text-align: left !important;
+}
+.myself{
+  padding-top: 16px;
+}
+
+
+/* progressbar */
+.skillbox{
+  display: flex;
+  font-size: 12pt;
+  background-color: #ffa500ab;
+  height: 34px;
+  width: 85%;
+  color: white;
+  margin: 14px auto;
+  align-items: center;
+  position: relative;
+}
+.skill{
+  position: absolute;
+  left: 8px;
+}
+.skillname{
+
+}
+.bar{
+  height: 100%;
+  width: 100%;
+}
+.skillbar{
+ height: 100%;
+}
+.animationbar{
+  height: 100%;
+  background-color: #f3ab27;
+  -webkit-animation-name: progressbar; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: progressbar;
+  animation-duration: 2s;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes progressbar {
+  from {width: 0%; }
+  to {width: 100%; }
+}
+/* Standard syntax */
+@keyframes progressbar {
+  from {width: 0%; }
+  to {width: 100%; }
+}
+.progressvalue{
+  color: white;
+  animation-name : progressvalue;
+  animation-duration: 2s;
+  position: absolute;
+  right: 8px;
+  text-shadow: 0 1px 2px white;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes progressvalue {
+  from {opacity:  0; }
+  to {opacity: : 1; }
+}
+/* Standard syntax */
+@keyframes progressvalue {
+  from {opacity:  0; }
+  to {opacity: : 1; }
+}
+
+/* worklist */
+.worklist{
+  width: 100%;
+}
+.workfield{
+  border-radius: 1.25rem;
+  padding: 22px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.name_of_work{
+  font-size: 1.36rem;
+  font-weight: 500;
+  text-shadow: 0 0 white;
+  padding: 12px;
+}
+.aboutwork{
+  font-size: 1.08rem;
+}
+.link{
+  display: flex;
+  font-size: 18px;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  font-family: monospace;
+  align-items: center;
+  margin: 18px auto;
+  border: 2px solid #ce1515;
+  transition: color 0.5s, background-color 0.5s , box-shadow 0.5s;
+}
+.workfield a {
+  color: #ce1515 !important;
+  text-align: left;
+}
+.workfield a:hover {
+  color: white !important;
+  text-decoration: none;
+}
+.link:hover{
+  background-color: #ce1515;
+  box-shadow: 0 6px 8px #0000005e;
+}
+
+/* footer */
+.footer{
+  width: 100%;
+  background-color: #080505;
+  height: 250px;
+  padding: 10px 0px;
+}
+.communication{
+  width: 100%;
+  margin: 24px 0px;
+}
+.box{
+  padding: 10px 0px;
+}
+.social{
+  text-align: center;
+}
+.socialicon{
+  background-color: #3c3838;
+  display: inline-block;
+  border: 2px solid black;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0 0px 1px 0px white;
+  transition: background-color 0.6s,padding 0.3s, margin 0.3s ;
+}
+.socialicon:hover{
+ background-color: #ff531f;
+ padding: 2px;
+ margin: 3px 8px;
+
+}
+.socialicon img{
+  height: 100%;
+  padding: 15px;
+}
+.email{
+  text-align: center;
+}
+
+
+@media (min-width: 576px){
+  .rowheader{
+    font-size: 30pt;
+  }
+  .flex-rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .main-section{
+    margin: 56px 18px;
+  }
+  .sub-section{
+    margin-left: 18px;
+  }
+  .text-myself{
+    margin-bottom: 0px;
+  }
+  .avatar{
+    width: 33.33%;
+  }
+  .text-header{
+    width: 66.66%;
+  }
+  .who{
+    font-size: 36px;
+  }
+  .educational-background{
+    padding: 12px;
+  }
+  .section-header{
+    margin: 18px 0px;
+  }
+  .worklist{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .workfield{
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px){
+  .rowheader{
+    font-size: 36pt;
+  }
+
+  .main-section{
+    margin: 56px;
+  }
+  .sub-section{
+    width: 50%;
+    margin-left: 56px;
+  }
+  .text-myself{
+    width: 50%;
+  }
+
+  .section-header{
+    margin: 40px 0;
+  }
+  .worklist{
+    width: auto;
+  }
+  .workfield{
+    width: 40%;
+    padding: 30px;
+    margin-bottom: 56px;
+  }
+  .link{
+    margin: 25px auto;
+  }
+}
+
+@media (min-width: 1200px){
+
+  .rowheader{
+    font-size: 42pt;
+  }
+  .flex-rows{
+    justify-content: center;
+  }
+  .main-section {
+    margin: 86px;
+  }
+  .sub-section {
+    width: 33%;
+    margin-left: 0px;
+  }
+  .text-myself {
+    width: 40%;
+    padding: 40px;
+    margin-right: 86px;
+  }
+
+  .educational-background {
+    padding: 20px;
+  }
+  .result{
+    padding: 8px 0;
+  }
+  .worklist{
+    justify-content: space-between;
+  }
+  .workfield{
+    width: 31.2%;
+    padding: 20px 30px;
+  }
+  .link {
+    margin: 28px auto;
+  }
+
+}
