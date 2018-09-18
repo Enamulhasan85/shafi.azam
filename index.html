@@ -5,13 +5,18 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+  <script src="js/jquery.waypoints.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+  <script>
+    ScrollReveal({ duration: 1000 })
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio | lorem ipsum - Front-end Developer</title>
+  <title>Portfolio | Shafiul Azam - Front-end Developer</title>
   <style>
     .navbar-dark .navbar-nav .nav-link{
       color: white;
@@ -22,18 +27,29 @@
     li:{
       border-bottom: 2px red ;
     }
-    .bg-dark {
-      background-color: transparent!important;
-      box-shadow: 2px 1px 12px 0px whitesmoke;
+    .navbar-bg {
+      background-color: #ce1515c4!important;
+      box-shadow: 0px 2px 8px 0px #0000003b;
+    }
+    .nav-link{
+      color: #fdfdfd!important;
+      font-size: 12pt!important;
+    }
+    .nav-item:hover .nav-link{
+      border-bottom: 2px solid #FF5722 !important;
+      color: #e4cfcf!important;
+    }
+    .nav-item:hover {
+      padding: 8px 8px 6px 8px !important;
     }
 
   </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target="#scrollspy" data-offset="500">
 
   <!-- **********navbar*********** -->
 
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+  <nav id="scrollspy" class="navbar navbar-expand-sm navbar-bg navbar-dark fixed-top ">
       <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon "></span>
       </button>
@@ -43,13 +59,13 @@
           <a class="nav-link" href="#section1">HOME</a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#section2">PROFESSIONAL</a>
+          <a class="nav-link" href="#section2">ABOUT</a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#section3">PORTFOLIO</a>
+          <a class="nav-link" href="#section3">PROFESSIONAL</a>
         </li>
         <li class="nav-item p-2">
-          <a class="nav-link" href="#section4">EXPERIENCE</a>
+          <a class="nav-link" href="#section4">PORTFOLIO</a>
         </li>
       </ul>
     </div>
@@ -57,21 +73,21 @@
 
   <!-- **********navbar*********** -->
 
-  <div class="bg-image"></div>
+  <div id="section1" class="bg-image"></div>
   <div class="rowheader">
-    Hi I'm <span class="developer"> lorem ipsum </span> <br>  I am a Front-end Web Developer.
+    Hi I'm <span class="developer"> Shafiul Azam </span> <br>  I am a Front-end Web Developer.
   </div>
 
   <!-- ***********education********** -->
 
-  <div class="flex-rows flex-columns main-section">
-    <div class="text-myself flex1">
+  <div id="section2" class="flex-rows flex-columns main-section">
+    <div class="text-myself flex1 field-reveal">
       <div class="flex">
         <div class="avatar">
           <img src="images/myself.jpg" class="" alt="myphoto" width="88px">
         </div>
         <div class="text-header">
-          <div class="who">lorem ipsum</div>
+          <div class="who">Shafiul Azam</div>
           <p>Front-end Web Developer</p>
         </div>
       </div>
@@ -80,21 +96,21 @@
       </div>
     </div>
     <div class="flex-columns sub-section flex2">
-      <div class="educational-background">
+      <div class="educational-background field-reveal">
         <div class="clearfix">
           <div class="qualificationname">S.S.C</div>
           <div class="year">2008-2009</div>
         </div>
         <div class="result">Passed Secondary School Certificate from Sylhet board with G.P.A 5.00</div>
       </div>
-      <div class="educational-background">
+      <div class="educational-background field-reveal">
         <div class="clearfix">
           <div class="qualificationname">H.S.C</div>
           <div class="year">2010-2011</div>
         </div>
         <div class="result">Passed Secondary School Certificate from Sylhet board with G.P.A 5.00</div>
       </div>
-      <div class="educational-background">
+      <div class="educational-background field-reveal">
         <div class="clearfix">
           <div class="qualificationname">B.Sc in CSE</div>
           <div class="year">2013- 2017</div>
@@ -106,10 +122,12 @@
 
   <!-- ***********progressbar********** -->
 
-  <div class="main-section">
+
+
+  <div id="section3" class="main-section">
     <div class="section-header">
-      <div class="section-name">PROFESSIONAL</div>
-      <div class="textwhat">MY KNOWLEDGE LEVEL</div>
+      <div class="section-name text-reveal">PROFESSIONAL</div>
+      <div class="textwhat text-reveal">MY KNOWLEDGE LEVEL</div>
     </div>
 
     <div class="skillbox">
@@ -151,31 +169,39 @@
 
   <!-- ***********workfield********** -->
 
-  <div class="main-section">
+  <div id="section4" class="main-section">
     <div class="section-header">
-      <div class="section-name">PORTFOLIO</div>
-      <div class="textwhat">MY LATEST WORKS</div>
+      <div class="section-name text-reveal">PORTFOLIO</div>
+      <div class="textwhat text-reveal">MY LATEST WORKS</div>
     </div>
-    <div class="worklist flex-rows flex-columns">
-      <div class="workfield">
+    <div class="worktable flex-rows flex-columns">
+      <div class="workfield field-reveal">
         <div class="name_of_work">Solutions Overflow</div>
         <div class="aboutwork">Lorem ipsum dolor sit amet, cctetur adicing elit. Soluta impedit placeat voltibus auteniti libero aliquid vetis sequi dolque riosam?</div>
-        <a href="#"><div class="link">VIEW SITE</div></a>
+        <div class="btn-link">
+          <a href="#"><div class="link">VIEW SITE</div></a>
+        </div>
       </div>
-      <div class="workfield">
+      <div class="workfield field-reveal">
         <div class="name_of_work">Micro Finance</div>
         <div class="aboutwork">Lorem ipsum dolor sit amet, cotetur adicing elit. Soluta impedit placeat ptatibus aut liti libero aliquid vatis sequi demque laboriosam?</div>
-        <a href="#"><div class="link">VIEW SITE</div></a>
+        <div class="btn-link">
+          <a href="#"><div class="link">VIEW SITE</div></a>
+        </div>
       </div>
-      <div class="workfield">
+      <div class="workfield field-reveal">
         <div class="name_of_work">Micro Land</div>
         <div class="aboutwork">Lorem ipsum dolor sit amet, conetur adicing elit. Soluta impedit placeat vtatibus aut niti libero aliquid vatis sequi domque liosam?</div>
-        <a href="#"><div class="link">VIEW SITE</div></a>
+        <div class="btn-link">
+          <a href="#"><div class="link">VIEW SITE</div></a>
+        </div>
       </div>
-      <div class="workfield">
+      <div class="workfield field-reveal">
         <div class="name_of_work">Micro Terbine</div>
         <div class="aboutwork">Lorem ipsum dolor sit amet, cctetur asicing elit. Soluta impedit placeat vtatibus aut niti libero aliquid tatis sequi remque laborm?</div>
-        <a href="#"><div class="link">VIEW SITE</div></a>
+        <div class="btn-link">
+          <a href="#"><div class="link">VIEW SITE</div></a>
+        </div>
       </div>
     </div>
   </div>
@@ -208,13 +234,19 @@
         </div>
       </div>
       <div class="email">
-        <i style="color:#d4b3b3;">loremipsum@gmail.com</i>
+        <i style="color:#d4b3b3;">syl.shafi@gmail.com</i>
       </div>
     </div>
     <div class="copyright" style="text-align:center; color:white;">
-      lorem ipsum ©TwentyEighteen
+      Shafiul Azam ©TwentyEighteen
     </div>
   </div>
+  <script>
+    ScrollReveal().reveal('.skillbox', {distance: '80px',duration: '1000', interval: '300'});
+    ScrollReveal().reveal('.field-reveal', {distance: '80px',duration: '1000', interval: '300'});
+    ScrollReveal().reveal('.text-reveal', {distance: '80px', origin: 'right', duration: '1000' , interval: '300', mobile: false});
+    ScrollReveal().reveal('.socialicon', {distance: '150px', origin: 'right',duration: '1000', interval: '300', mobile: false});
 
+  </script>
 </body>
 </html>

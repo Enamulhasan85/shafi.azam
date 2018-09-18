@@ -7,11 +7,12 @@ body{
 /* home */
 .bg-image{
   background-image: url("../images/coding_in_the_laptop.jpeg");
-  min-height: 550px;
+  min-height: 630px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 .rowheader{
   position: absolute;
@@ -35,10 +36,10 @@ body{
 
 /* myself */
 .main-section{
-  margin: 18px;
+ padding: 18px;
 }
 .section-header{
-  padding: 12px;
+  margin-bottom: 40px;
 }
 .section-name{
   font-size: 2.2rem;
@@ -68,7 +69,7 @@ body{
 .text-myself, .educational-background, .workfield {
   width: 100%;
   text-align: justify;
-  border: .5px solid #eae4e4;
+  box-shadow: 0 0 6px 2px #00000030;
   border-radius: 0.25rem;
 }
 .text-myself{
@@ -126,20 +127,18 @@ body{
 .skillbox{
   display: flex;
   font-size: 12pt;
-  background-color: #ffa500ab;
+  background-color: #e91e649c;
   height: 34px;
   width: 85%;
   color: white;
-  margin: 14px auto;
+  margin: 22px auto;
   align-items: center;
   position: relative;
+  box-shadow: 0 2px 4px #00000059;
 }
 .skill{
   position: absolute;
   left: 8px;
-}
-.skillname{
-
 }
 .bar{
   height: 100%;
@@ -150,19 +149,19 @@ body{
 }
 .animationbar{
   height: 100%;
-  background-color: #f3ab27;
+  background-color: #E91E63;
   -webkit-animation-name: progressbar; /* Safari 4.0 - 8.0 */
   -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
   animation-name: progressbar;
   animation-duration: 2s;
 }
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes progressbar {
+@-webkit-keyframes  {
   from {width: 0%; }
   to {width: 100%; }
 }
 /* Standard syntax */
-@keyframes progressbar {
+@keyframes  {
   from {width: 0%; }
   to {width: 100%; }
 }
@@ -175,18 +174,18 @@ body{
   text-shadow: 0 1px 2px white;
 }
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes progressvalue {
+@-webkit-keyframes  {
   from {opacity:  0; }
   to {opacity: : 1; }
 }
 /* Standard syntax */
-@keyframes progressvalue {
+@keyframes  {
   from {opacity:  0; }
   to {opacity: : 1; }
 }
 
-/* worklist */
-.worklist{
+/* worktable */
+.worktable{
   width: 100%;
 }
 .workfield{
@@ -204,25 +203,29 @@ body{
 .aboutwork{
   font-size: 1.08rem;
 }
+.btn-link{
+  margin: 18px auto;
+  width: 120px;
+  height: 40px;
+  text-decoration: none !important;
+}
+.btn-link a{
+  text-decoration: none !important;
+  color: #ce1515 !important;
+  text-align: left;
+}
 .link{
   display: flex;
   font-size: 18px;
-  width: 120px;
   height: 40px;
   justify-content: center;
   font-family: monospace;
   align-items: center;
-  margin: 18px auto;
   border: 2px solid #ce1515;
   transition: color 0.5s, background-color 0.5s , box-shadow 0.5s;
 }
-.workfield a {
-  color: #ce1515 !important;
-  text-align: left;
-}
-.workfield a:hover {
+.btn-link a:hover {
   color: white !important;
-  text-decoration: none;
 }
 .link:hover{
   background-color: #ce1515;
@@ -246,20 +249,20 @@ body{
 .social{
   text-align: center;
 }
+.social a{
+  color: transparent !important;
+}
 .socialicon{
   background-color: #3c3838;
   display: inline-block;
-  border: 2px solid black;
-  margin: 5px;
+  margin: 5px 8px;
   padding: 5px;
-  box-shadow: 0 0px 1px 0px white;
-  transition: background-color 0.6s,padding 0.3s, margin 0.3s ;
+  transition: background-color 0.3s,padding 0.3s, margin 0.3s ;
 }
 .socialicon:hover{
- background-color: #ff531f;
+ background-color: #E91E63;
  padding: 2px;
- margin: 3px 8px;
-
+ margin: 6px 11px;
 }
 .socialicon img{
   height: 100%;
@@ -280,7 +283,7 @@ body{
     justify-content: space-between;
   }
   .main-section{
-    margin: 56px 18px;
+    padding: 84px 18px 0px 18px;
   }
   .sub-section{
     margin-left: 18px;
@@ -301,9 +304,9 @@ body{
     padding: 12px;
   }
   .section-header{
-    margin: 18px 0px;
+    margin-bottom: 48px;
   }
-  .worklist{
+  .worktable{
     flex-wrap: wrap;
     justify-content: space-around;
   }
@@ -316,10 +319,6 @@ body{
   .rowheader{
     font-size: 36pt;
   }
-
-  .main-section{
-    margin: 56px;
-  }
   .sub-section{
     width: 50%;
     margin-left: 56px;
@@ -327,11 +326,13 @@ body{
   .text-myself{
     width: 50%;
   }
-
-  .section-header{
-    margin: 40px 0;
+  .main-section {
+    padding: 86px 98px;
   }
-  .worklist{
+  .section-header{
+    margin-bottom: 56px;
+  }
+  .worktable{
     width: auto;
   }
   .workfield{
@@ -339,7 +340,7 @@ body{
     padding: 30px;
     margin-bottom: 56px;
   }
-  .link{
+  .btn-link{
     margin: 25px auto;
   }
 }
@@ -352,9 +353,6 @@ body{
   .flex-rows{
     justify-content: center;
   }
-  .main-section {
-    margin: 86px;
-  }
   .sub-section {
     width: 33%;
     margin-left: 0px;
@@ -364,21 +362,20 @@ body{
     padding: 40px;
     margin-right: 86px;
   }
-
   .educational-background {
     padding: 20px;
   }
   .result{
     padding: 8px 0;
   }
-  .worklist{
+  .worktable{
     justify-content: space-between;
   }
   .workfield{
     width: 31.2%;
     padding: 20px 30px;
   }
-  .link {
+  .btn-link {
     margin: 28px auto;
   }
 
